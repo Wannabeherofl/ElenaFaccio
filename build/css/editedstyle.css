@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Now-Font-Thin';
+    src: url(../Fonts/now.thin.otf);
+  }
+  @font-face {
+    font-family: 'Bubble';
+    src: url(../Fonts/BubbleboddyNeue-Light\ Trial.ttf);
+  }
+
+  .Main-font {
+    font-family: "Now-Font-Thin";
+  }
+  .Second-Font {
+    font-family: "Bubble";
+  }

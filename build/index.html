@@ -9,35 +9,41 @@
   <body class="min-h-screen bg-slate-50 dark:bg-black">
     <header class="bg-white dark:bg-black text-black dark:text-white sticky top-0 z-10">
       <section class="mx-auto pt-16 pb-2 pl-40 pr-40 flex justify-between items-center">
-        <div>
-          <nav class="ml-43 Second-Font hidden sm:block space-x-8 text-2xl" aria-label="main">
+        <div class="flex">
+          <nav class="h-16 Second-Font hidden sm:block border-b-2 border-orange-300 space-x-8 text-2xl pr-6 pl-6" aria-label="main">
             <a href="index.html" 
             class="link hover:opacity-90">
             Home
             </a>
-            <a href="AboutMe.html">
+          </nav>
+          <nav class="h-16 Second-Font hidden sm:block space-x-8 text-2xl" aria-label="main">
+            <a href="AboutMe.html" class="h-16 active">
               About Me
             </a>
           </nav>
         </div>
-        <h1 class="Main-font text-7xl font-medium text-center pl-10 pr-10">
-            Elena Faccio
-            <hr>
-          <div class="Second-Font text-center text-sm sm:text-2xl">
-            Strategies for individuality and effective <span class="text-orange-500 dark:text-orange-300">identity</span> communication
+            <div>
+              <h1 class="Main-font text-7xl font-medium text-center pl-10 pr-10">Elena Faccio</h1>
+              <hr>
+              <div class="Second-Font text-center text-sm sm:text-2xl">
+              Strategies for <span class="text-[#5bd086] dark:text-[#90FFB9]">individuality</span> and effective <span class="text-orange-500 dark:text-orange-300">identity</span> communication
+            </div>
           </div>
-        </h1>
-        <div>
+        <div class="flex">
           <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none">
             &#9776;
           </button>
-          <nav class="mr-43 ml-43 Second-Font hidden sm:block space-x-8 text-2xl" aria-label="main">
-            <a href="Services.html" 
-            class="link hover:opacity-90">Services</a>
-            <a href="Contact.html" 
-            class="link hover:opacity-90">Contact</a>
-          </nav>
-        </div>
+            <nav class="h-16 Second-Font hidden sm:block space-x-8 text-2xl" aria-label="main">
+              <a href="Services.html" 
+              class="link hover:opacity-90">
+              Services
+              </a>
+            </nav>
+            <nav class="h-16 Second-Font hidden sm:block space-x-8 text-2xl pr-6 pl-6" aria-label="main">
+              <a href="Contact.html" class="h-16">
+                Contact
+              </a>
+            </nav>
       </section>
 
     </header>
@@ -45,7 +51,7 @@
     <main class="max-w-4xl mx-auto">
       <section id="hero" class="hero flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12">
         <article class="sm:w-1/2">
-          <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white">
+          <h2 class="Third-font max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white">
             Cosa Faccio
           </h2>
           <p class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">
@@ -55,68 +61,41 @@
       </section>
       <hr class="mx-auto bg-white dark:bg-black w-1/2">
       
-      <section id="reviews" class="p-6 my-12">
-        <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+      <section id="reviews" class="p-6 pb-0 mb-0 my-12">
+        <h2 class="Third-font text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
           Wonderful Clients
         </h2>
-        <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
-          <li class="w-1/2 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-1 px-1 rounded-2xl">
-            <img class="mb-6" src="./images/camilla1.jpg" alt="Camilla">
-            <h3 class="text-3xl text-center text-slate-900 dark:text-white">Camilla</h3>
-            <p class="hidden sm:block text-3xl text-center mt-2 text-slate-400">Cat</p>
-            <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">Cat</p>
+        <ul class="list-none mx-auto mt-12 flex flex-col sm:flex-row items-center gap-8">
+          <li class="w-1/2 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-1 px-1 rounded">
+            <img class="mb-6 rounded" src="./images/boxcamilla.jpg" alt="Camilla">
+            <h3 class="Second-Font text-3xl text-center text-slate-900 dark:text-white">Camilla</h3>
+            <p class="Second-Font hidden sm:block text-3xl text-center mt-2 text-slate-400">Cat</p>
+            <p class="Second-Font sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">Cat</p>
           </li>
-          <li class="w-1/2 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-1 px-1 rounded-2xl">
-            <img class="mb-6" src="./images/zelda1.jpg" alt="Zelda">
-            <h3 class="text-3xl text-center text-slate-900 dark:text-white">Zelda</h3>
-            <p class="hidden sm:block text-3xl text-center mt-2 text-slate-400">Cat</p>
-            <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">Cat</p>
+          <li class="w-1/2 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-1 px-1 rounded">
+            <img class="mb-6 rounded" src="./images/boxzelda.jpg" alt="Zelda">
+            <h3 class="Second-Font text-3xl text-center text-slate-900 dark:text-white">Zelda</h3>
+            <p class="Second-Font hidden sm:block text-3xl text-center mt-2 text-slate-400">Cat</p>
+            <p class="Second-Font sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">Cat</p>
           </li>
-          <li class="w-1/2 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-1 px-1 rounded-r-sm">
-            <img class="mb-6" src=".\images\IMG_20230125_200152.jpg" alt="Camilla">
-            <h3 class="text-3xl text-center text-slate-900 dark:text-white">Me</h3>
-            <p class="hidden sm:block text-3xl text-center mt-2 text-slate-400">Silly Girl</p>
-            <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">Silly Girl</p>
+          <li class="w-1/2 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-1 px-1 rounded">
+            <img class="mb-6 rounded" src=".\images\boxElena.jpg" alt="Camilla">
+            <h3 class="Second-Font text-3xl text-center text-slate-900 dark:text-white">Me</h3>
+            <p class="Second-Font hidden sm:block text-3xl text-center mt-2 text-slate-400">Silly Girl</p>
+            <p class="Second-Font sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">Silly Girl</p>
           </li>
         </ul>
-      </section>
-      <hr class="mx-auto bg-black dark:bg-white w-1/2">
-      <section id="Quotes" class="p-6 my-12">
-        <h2 class="Main-font text-4x1 font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
-          Reviews
-        </h2>
-        <figure class="my-12">
-          <blockquote class="bg-white dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative border-2 border-orange-300 dark:border-white">
-            <p class="text-2x1 sm:text-3xl text-left mt-2 text-black dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-slate-400 before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-slate-400 after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
-              meow meow!
-            </p>
-          </blockquote>
-          <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
-            &#8212;Zelda, Cat
-          </figcaption>
-        </figure>
-        <figure class="my-12">
-          <blockquote class="bg-white dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative border-2 border-orange-300 dark:border-white">
-            <p class="text-2x1 sm:text-3xl text-left mt-2 text-black dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-slate-400 before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-slate-400 after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
-              meow?
-            </p>
-            
-          </blockquote>
-          <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
-            &#8212;Camilla, Cat
-          </figcaption>
-        </figure>
-        <figure class="my-12">
-          <blockquote class="bg-white dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative border-2 border-orange-300 dark:border-white">
-            <p class="text-2x1 sm:text-3xl text-left mt-2 text-black dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-slate-400 before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-slate-400 after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
-              Elena is very silly but i like her
-            </p>
-            
-          </blockquote>
-          <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
-            &#8212;Shiloh, silly boy
-          </figcaption>
-        </figure>
+        <div class="pt-5 flex items-center text-center gap-8 Second-Font text-2xl text-slate-700 dark:text-slate-400">
+          <p class="w-1/2">
+            "Meow?" -Zelda, cat
+          </p>
+          <p class="w-1/2">
+            "Meow meow!" -Camilla, also a cat
+          </p>
+          <p class="w-1/2">
+            "Meow" -Elena, possibly a cat
+          </p>
+        </div>
       </section>
     </main>
   </body>
